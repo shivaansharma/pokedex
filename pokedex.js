@@ -29,6 +29,6 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${i}`).then(name => name.json()))
              <h2>${pokemon.name}</h2>
              <h4>${pokemon.ability}</h2>
         </li>
-        `)
+        `).join("")
       pokedex.innerHTML=pokemonHTMLString
    }
